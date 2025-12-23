@@ -63,33 +63,7 @@ The assessment focuses on **SQL Injection**, **Cross-Site Scripting (XSS)**, and
 
 ---
 
-## 📁 Repository Structure
-DVWA-Web-Security-Assessment/
-│
-├── SQL_Injection/
-│ ├── payloads.txt
-│ ├── steps.md
-│ └── screenshots/
-│
-├── XSS/
-│ ├── reflected_xss_payloads.txt
-│ ├── stored_xss_payloads.txt
-│ ├── steps.md
-│ └── screenshots/
-│
-├── CSRF/
-│ ├── csrf.html
-│ ├── steps.md
-│ └── screenshots/
-│
-└── Report/
-├── DVWA_Security_Assessment_Report.docx
-└── DVWA_Security_Assessment_Report.pdf
 
-yaml
-Copy code
-
----
 
 ## 📊 OWASP Top 10 Mapping
 | Vulnerability | OWASP Category |
